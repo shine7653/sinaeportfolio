@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faTwitter } from "@fortawesome/fontawesome-free-brands";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter
+} from "@fortawesome/fontawesome-free-brands";
 // import { faFreecodecamp } from "@fortawesome/free-brands-svg-icons";
+import ReSkills from "./ReSkills";
 
 export default class Landing extends Component {
   render() {
@@ -15,15 +20,29 @@ export default class Landing extends Component {
               alt="avatar"
               className="avatar-img"
             />
+          </Cell>
 
+          <Cell col={12}>
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h1>Hi !  I'm Sinae Kim </h1>
+              <h2>Full Stack Web Developer</h2>  
+              <h4>Looking for FrontEnd Job!</h4>
               <hr />
 
-              <p>
-                HTML/CSS | Bootstrap | Javascript | React | NodeJS | Express |
-                MySQL | MongoDB
-              </p>
+              {/* --------------------------------------------------- */}
+              <div className="banner-progressive">
+              <h2>Skills</h2>
+              <ReSkills skill="HTML/CSS" progress={50} />
+              <ReSkills skill="Bootstrap" progress={50} />
+              <ReSkills skill="Javascript" progress={50} />
+              <ReSkills skill="NodeJS" progress={50} />
+              <ReSkills skill="MySQL" progress={50} />
+              <ReSkills skill="MongoDB" progress={50} />
+              <ReSkills skill="React" progress={50} />
+              </div>
+              <hr />
+
+              {/* --------------------------------------------------- */}
 
               <div className="social-links">
                 {/* LinkedIn */}
@@ -41,6 +60,7 @@ export default class Landing extends Component {
               </div>
             </div>
           </Cell>
+
         </Grid>
       </div>
     );

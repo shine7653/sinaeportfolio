@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 import Main from "./components/Main";
 import "./css/app.css";
 
-
-
 class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title="Title" scroll>
+          <Header className="header-color" title="Sinae's Portfolio" scroll>
             <Navigation>
-              <Link to="/">Resume</Link>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/resume">Resume</Link>
               {/* <Link to="/">About Me</Link> */}
-              <Link to="/">Projects</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="Sinae's Portfolio">
             <Navigation>
-            <Link to="/">Resume</Link>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/resume">Resume</Link>
               {/* <Link to="/">About Me</Link> */}
-              <Link to="/">Projects</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
           <Content>

@@ -1,6 +1,6 @@
 .contact-body {
     margin: auto;
-    background: grey;
+    /* background: grey; */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -15,7 +15,7 @@
     height: 600px;
     background: white;
     color: black;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-bottom: 20px;
 }
 
