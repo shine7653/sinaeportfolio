@@ -1,5 +1,8 @@
 @import-normalize;
 @import 'landing.css';
+/* @import 'projects.css'; */
+@import 'contact.css';
+/* @import 'resume.css'; */
 
 body { 
     padding: 0;
