@@ -24,9 +24,12 @@ export default class Landing extends Component {
 
           <Cell col={12}>
             <div className="banner-text">
-              <h1>Hi !  I'm Sinae Kim </h1>
+              <h1>Hi,   I'm Sinae Kim, pleasure to meet you here! </h1>
               <h2>Full Stack Web Developer</h2>  
-              <h4>Looking for FrontEnd Job!</h4>
+              <h4>I'm based on Seattle, Washington. I'm currently studying at UW Coding Bootcamp,
+                Pursuing to be a web developer. I'm passionate about web developing projects,
+                happy with improving my craft and process. Check out my work and come chat to me on email.
+              </h4>
               <hr />
 
               {/* --------------------------------------------------- */}
